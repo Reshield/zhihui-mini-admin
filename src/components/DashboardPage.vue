@@ -1,6 +1,6 @@
 <template>
   <div id="dashboard">
-      <Sidebar></Sidebar>
+      <Sidebar style="float: left"></Sidebar>
       <!-- <navbar></navbar> -->
       <div class="content">
         <transition name="router-fade" mode="out-in">
@@ -23,5 +23,10 @@ export default {
 }
 </script>
 <style scoped>
-
+.content {
+  box-sizing: border-box;
+  padding: 10px 10px 10px 10px;
+  min-height: 700px;
+  overflow: auto;
+}
 </style>

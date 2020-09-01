@@ -4,6 +4,7 @@ import router from "./router";
 import store from "./store";
 import axios from 'axios'
 import "./plugins/element.js";
+// import "./font-awesome/scss/font-awesome.scss"
 
 
 Vue.config.productionTip = false;
