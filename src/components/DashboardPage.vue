@@ -1,5 +1,5 @@
 <template>
-  <div id="dashboard">
+  <div id="dashboard" class="container">
       <Sidebar style="float: left"></Sidebar>
       <!-- <navbar></navbar> -->
       <div class="content">
@@ -23,10 +23,18 @@ export default {
 }
 </script>
 <style scoped>
+body {
+  background: #f5f7fa;
+  display: block;
+}
+.container {
+  background-color: #F5F7FA;
+}
 .content {
   box-sizing: border-box;
   padding: 10px 10px 10px 10px;
   min-height: 700px;
   overflow: auto;
+  margin-left: 200px;
 }
 </style>

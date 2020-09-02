@@ -1,5 +1,5 @@
 <template>
-  <div id="sidebar">
+  <div id="sidebar" class="left-box">
     <el-menu 
       class="sidebar" 
       :unique-opened="true" 
@@ -11,7 +11,7 @@
         <i class="fa el-icon-s-home"></i>
         <span>后台主页</span>
       </el-menu-item>
-      <el-menu-item index="/dashboard/order">
+      <el-menu-item index="/orders">
         <i class="fa fa-large el-icon-menu"></i>
         <span>订单列表</span>
       </el-menu-item>
@@ -96,6 +96,18 @@ export default {
 }
 </script>
 <style scoped>
+.left-box {
+  width: 200px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 100%;
+  float: left;
+  flex-direction: column;
+  background: #fff;
+}
 .sidebar {
   width: 200px;
   flex: 1;

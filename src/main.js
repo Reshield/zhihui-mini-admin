@@ -7,12 +7,10 @@ import "./plugins/element.js";
 // import "./font-awesome/scss/font-awesome.scss"
 
 
-Vue.config.productionTip = false;
 
-Vue.prototype.$axios = axios;
+Vue.prototype.axios=axios
 axios.defaults.baseURL = 'http://localhost:3000'
-axios.defaults.withCredentials = false
-
+Vue.config.productionTip = false;
 
 new Vue({
   router,
